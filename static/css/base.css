@@ -1,0 +1,69 @@
+:root {
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+    --primary-color: #69bfa8;
+    --secondary-color: #689f38;
+    --background-color: #212121 ;
+    --text-color: #ffffff;
+
+    --primary-color-opacity-10: rgba(105, 191, 168, 0.1);
+    --background-color-opacity-10: rgba(33, 33, 33, 0.1);
+}
+
+html {
+    height: 200vh;
+}
+
+body {
+    background-color: var(--background-color)!important;
+    color: var(--text-color);
+    height: 100%;
+    font-family: var(--font-mono)!important;
+}
+
+.frosted-glass {
+    background-color: var(--background-color-opacity-10);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+.navbar {
+    color: var(--text-color);
+    /* background-color: var(--primary-color-opacity-10); */
+}
+
+.nav-link a {
+    color: var(--text-color);
+    
+}
+
+.nav-link a:hover {
+    color: var(--primar-color)!important;
+}
+
+.primary-colour  {
+    color: var(--primary-color);
+}
+
+.primary-bg-colour {
+    background-color: var(--primar-color);
+}
+
+.btn-outline-primary-colour {
+    color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+    transition: background-color .3s !important;
+}
+
+.btn-outline-primary-colour:hover {
+    background-color: var(--primary-color-opacity-10)!important;
+}  
+  
+a {
+    color: var(--primary-color);
+}
+  
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
