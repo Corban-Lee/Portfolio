@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 Corban-Lee Jones | Software Developer
@@ -16,28 +17,28 @@ Corban-Lee Jones | Software Developer
         <div class="collapse navbar-collapse mb-2 mb-xl-0" id="navbarCollapse">
             <ul class="navbar-nav ms-0 ms-lg-auto">
                 <li class="nav-item px-2">
-                    <a class="nav-link text-reset" href="#about">
-                        <span class="primary-colour">01</span>. About
+                    <a class="nav-link my-auto" href="#about">
+                        <span class="primary-colour">01.</span> About
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link text-reset" href="#experience">
-                        <span class="primary-colour">02</span>. Experience
+                    <a class="nav-link" href="#experience">
+                        <span class="primary-colour">02.</span> Experience
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link text-reset" href="#education">
-                        <span class="primary-colour">03</span>. Education
+                    <a class="nav-link" href="#education">
+                        <span class="primary-colour">03.</span> Education
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link text-reset" href="#work">
-                        <span class="primary-colour">04</span>. Work
+                    <a class="nav-link" href="#work">
+                        <span class="primary-colour">04.</span> Work
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link text-reset" href="#contact">
-                        <span class="primary-colour">05</span>. Contact
+                    <a class="nav-link" href="#contact">
+                        <span class="primary-colour">05.</span> Contact
                     </a>
                 </li>
                 <li class="nav-item ps-2 mt-2 ps-xl-3 mt-xl-0">
@@ -49,7 +50,82 @@ Corban-Lee Jones | Software Developer
         </div>
     </div>
 </nav>
-<section class="hero mt-5 pt-5">
-    test
+<section class="hero mt-5 pt-5 text-colour">
+    <div class="mb-5 py-0 py-xl-5 container" style="margin-top: 7rem;">
+        <div class="row mx-1 m-xl-5 justify-content-center">
+            <div class="col-xl-12 text-center text-sm-start">
+                <span class="primary-colour fs-5">Hello world! My name is</span>
+                <h1 class="mt-2 " style="font-size: clamp(40px, 8vw, 80px); font-family: calibri;">
+                    Corban-Lee Jones;<br>
+                    <span class="primary-colour">I'm A Software Engineer.</span></h1>
+                <div class="col-md-7 col-lg-5 mt-3">
+                    <p class="fs-5" style="font-family: calibri;">
+                        I am a software engineer currently working in full stack web development at Vernon Gate, Derby.
+                        I love to write clean and efficient code behind software used by many people.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="text-colour py-5">
+    <div class="my-5 container">
+        <div class="row mx-1 m-xl-5 justify-content-center">
+            <div class="col-xl-12 text-center text-sm-start">
+                <h1 style="font-family: calibri;">About Me</h1>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non cupiditate iste vel iusto eaque libero eos odit! Neque ipsum quas similique sed nisi. Quasi nemo blanditiis dignissimos accusantium voluptatem.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo commodi expedita tempore nam aperiam, reprehenderit doloremque placeat assumenda ad modi aliquam soluta quibusdam dicta eos, error atque deleniti quod consectetur.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis ipsum eligendi at harum vel dolore quos eos porro enim quibusdam autem aliquam doloremque sequi, adipisci soluta reprehenderit velit in?
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel odit corporis amet, non dicta eveniet natus quis aliquam vitae dolore quam impedit voluptates hic aperiam totam laboriosam ullam. Placeat, dolor?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus incidunt nihil fugiat, impedit, fugit obcaecati suscipit vitae voluptates, quibusdam illum. Eveniet, labore dicta nobis cupiditate commodi assumenda! Iure, similique!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic sed vel vitae aliquam quod, excepturi corporis similique praesentium, nobis vero neque soluta deleniti atque. Placeat soluta voluptatum voluptates fugiat.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="h-100 d-flex justify-content-center align-items-center">
+                            <img width="400px" class="grayscale rounded-circle" src="{% static 'img/corbz.jpg' %}" alt="Photo of Corban-Lee Jones">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="experience" class="text-colour py-5">
+    <div class="my-5 container">
+        <div class="row mx-1 m-xl-5 justify-content-center">
+            <h1 class="mb-3" style="font-family: calibri;">Experience</h1>
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2>Personal</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iste saepe deleniti? Cum odit nihil doloremque ratione quibusdam eius sit optio placeat ut voluptates pariatur adipisci magnam, itaque magni iusto.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas totam omnis nisi perspiciatis libero aut a labore veniam esse quis molestias reiciendis voluptates atque et dolor, nobis at voluptatum molestiae.
+                    </p>
+                </div>
+                <div class="col-xl-6">
+                    <h2>Tesco</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iste saepe deleniti? Cum odit nihil doloremque ratione quibusdam eius sit optio placeat ut voluptates pariatur adipisci magnam, itaque magni iusto.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas totam omnis nisi perspiciatis libero aut a labore veniam esse quis molestias reiciendis voluptates atque et dolor, nobis at voluptatum molestiae.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h2>Derventio Education</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iste saepe deleniti? Cum odit nihil doloremque ratione quibusdam eius sit optio placeat ut voluptates pariatur adipisci magnam, itaque magni iusto.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas totam omnis nisi perspiciatis libero aut a labore veniam esse quis molestias reiciendis voluptates atque et dolor, nobis at voluptatum molestiae.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas totam omnis nisi perspiciatis libero aut a labore veniam esse quis molestias reiciendis voluptates atque et dolor, nobis at voluptatum molestiae.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas totam omnis nisi perspiciatis libero aut a labore veniam esse quis molestias reiciendis voluptates atque et dolor, nobis at voluptatum molestiae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}

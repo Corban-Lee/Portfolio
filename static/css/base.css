@@ -3,22 +3,22 @@
 
     --primary-color: #69bfa8;
     --secondary-color: #689f38;
-    --background-color: #212121 ;
-    --text-color: #ffffff;
+    --background-color: #212121;
+    --text-color: rgb(204, 214, 246);
 
     --primary-color-opacity-10: rgba(105, 191, 168, 0.1);
     --background-color-opacity-10: rgba(33, 33, 33, 0.1);
 }
 
 html {
-    height: 200vh;
+    height: 100vh;
 }
 
 body {
     background-color: var(--background-color)!important;
     color: var(--text-color);
-    height: 100%;
     font-family: var(--font-mono)!important;
+    font-size: 13px!important;
 }
 
 .frosted-glass {
@@ -32,9 +32,22 @@ body {
     /* background-color: var(--primary-color-opacity-10); */
 }
 
-.nav-link a {
-    color: var(--text-color);
-    
+a.nav-link {
+    color: var(--text-color)!important;
+}
+
+a.nav-link:hover {
+    color: var(--primary-color)!important;
+}
+
+.nav-item button {
+    font-size: 13px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .nav-link a:hover {
@@ -47,6 +60,14 @@ body {
 
 .primary-bg-colour {
     background-color: var(--primar-color);
+}
+
+.secondary-colour {
+    color: var(--secondary-color);
+}
+
+.text-colour {
+    color: var(--text-color);
 }
 
 .btn-outline-primary-colour {
@@ -66,4 +87,9 @@ a {
 button {
     background-color: var(--secondary-color);
     color: var(--text-color);
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
