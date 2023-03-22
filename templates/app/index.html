@@ -8,8 +8,8 @@ Corban-Lee Jones | Software Developer
 {% block content %}
 <nav class="navbar navbar-expand-xl fixed-top frosted-glass">
     <div class="container-fluid px-5 py-3">
-        <a href="/" class="navbar-brand text-reset">
-            <i class="bi bi-plugin fs-1 primary-colour d-none"></i>
+        <a href="/" class="position-relative">
+            <i class="bi bi-plugin fs-1 primary-colour position-absolute top-50 translate-middle-y"></i>
         </a>
         <button class="navbar-toggler btn-outline-primary-colour" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list" style="font-size: 30px;"></i>
@@ -76,8 +76,9 @@ Corban-Lee Jones | Software Developer
                 <button class="btn btn-outline-primary-colour px-4 py-3">Take a look at my CV!</button>
             </div>
         </section>
-        <section class="w-100 mb-5 pb-5 d-flex flex-wrap flex-column justify-content-center align-items-center text-colour">
-            <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;" id="about">About Me</h2>
+        <section class="w-100 mb-5 pb-5 d-flex flex-wrap flex-column justify-content-center align-items-center text-colour position-relative">
+            <div id="about" class="position-absolute" style="top: -10rem;"></div>
+            <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">About Me</h2>
             <div class="row gx-5">
                 <div class="col-sm-7 muted-text fs-5" style="font-family: calibri;">
                     <p>
@@ -118,8 +119,9 @@ Corban-Lee Jones | Software Developer
         </section>
         <section class="w-100 text-colour my-5 py-5">
             <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;" id="experience">Experience</h2>
+                <div class="col-12 position-relative">
+                    <div id="experience" class="position-absolute" style="top: -5rem;"></div>
+                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Experience</h2>
                     <div class="d-flex align-items-start">
                         <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="experience-tablist" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="experience-school-tab" data-bs-toggle="pill" data-bs-target="#experience-school-content" type="button" role="tab" aria-controls="experience-school-content" aria-selected="true">Secondary School</button>
@@ -127,7 +129,7 @@ Corban-Lee Jones | Software Developer
                             <button class="nav-link" id="experience-apprentice-tab" data-bs-toggle="pill" data-bs-target="#experience-apprentice-content" type="button" role="tab" aria-controls="experience-apprentice-content" aria-selected="false">Apprenticeship</button>
                             <button class="nav-link" id="experience-personal-tab" data-bs-toggle="pill" data-bs-target="#experience-personal-content" type="button" role="tab" aria-controls="experience-personal-content" aria-selected="false">Personal</button>
                         </div>
-                        <div class="tab-content muted-text fs-5" id="experience-tabcontent" style="font-family: calibri; min-height: 300px;">
+                        <div class="tab-content muted-text fs-5" id="experience-tabcontent" style="font-family: calibri; min-height: 400px;">
                             <div class="tab-pane fade show active" id="experience-school-content" role="tabpanel" aria-labelledby="experience-school-tab" tabindex=0>
                                 <p>
                                     I discovered my passion for programming in secondary school,
@@ -151,10 +153,12 @@ Corban-Lee Jones | Software Developer
                                     importance of delivering high-quality work in a professional setting.
                                 </p>
                                 <h4>Enhanced Skills</h4>
-                                <ul class="dashed">
+                                <ul class="dashed d-inline-block">
                                     <li>Python</li>
                                     <li>HTML</li>
                                     <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block">
                                     <li>JavaScript</li>
                                     <li>CSharp</li>
                                     <li>SQL</li>
@@ -171,10 +175,12 @@ Corban-Lee Jones | Software Developer
                                     which demonstrated my mastery of the concepts and my commitment to continuous learning and development.
                                 </p>
                                 <h4>Enhanced Skills</h4>
-                                <ul class="dashed">
+                                <ul class="dashed d-inline-block">
                                     <li>Python</li>
                                     <li>HTML</li>
                                     <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block">
                                     <li>JavaScript</li>
                                     <li>CSharp</li>
                                     <li>SQL</li>
@@ -191,10 +197,12 @@ Corban-Lee Jones | Software Developer
                                     for programming outside of a professional work environment.
                                 </p>
                                 <h4>Enhanced Skills</h4>
-                                <ul class="dashed">
+                                <ul class="dashed d-inline-block">
                                     <li>Python</li>
                                     <li>HTML</li>
                                     <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block">
                                     <li>JavaScript</li>
                                     <li>CSharp</li>
                                     <li>SQL</li>
@@ -207,53 +215,101 @@ Corban-Lee Jones | Software Developer
         </section>
         <section class="w-100 text-colour my-5 py-5">
             <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;" id="education">Education</h2>
+                <div class="col-12 position-relative">
+                    <div id="education" class="position-absolute" style="top: -5rem;"></div>
+                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Education</h2>
                     <div class="d-flex align-items-start">
                         <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="education-tablist" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="education-school-tab" data-bs-toggle="pill" data-bs-target="#education-school-content" type="button" role="tab" aria-controls="education-school-content" aria-selected="true">Kirkhallam Community Academy</button>
                             <button class="nav-link" id="education-college-tab" data-bs-toggle="pill" data-bs-target="#education-college-content" type="button" role="tab" aria-controls="education-college-content" aria-selected="false">Derby College</button>
                             <button class="nav-link" id="education-apprentice-tab" data-bs-toggle="pill" data-bs-target="#education-apprentice-content" type="button" role="tab" aria-controls="education-apprentice-content" aria-selected="false">EMA Training</button>
                         </div>
-                        <div class="tab-content muted-text fs-5" id="education-tabcontent" style="font-family: calibri;">
+                        <div class="tab-content muted-text fs-5" id="education-tabcontent" style="font-family: calibri; min-height: 400px;">
                             <div class="tab-pane fade show active" id="education-school-content" role="tabpanel" aria-labelledby="education-school-tab" tabindex=0>
-                                <h3 class="fw-bold">2014 - 2019</h3>
+                                <h3 class="fw-bold">2014 - March 2020</h3>
                                 <h4>Secondary School</h4>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quibusdam pariatur praesentium corporis, similique placeat id veniam dolorum reprehenderit alias beatae quos ut facere iure nulla ad culpa repudiandae dolores.
+                                    School was a confusing time where I had to find my identity and career path.
+                                    Thanks to my wonderful ICT teachers, I was able to learn how to code in the Python
+                                    programming language and from there my software developer journey started.
                                 </p>
-                                <h4>Education Outcome</h4>
-                                <ul class="dashed">
-                                    <li>Computer Science - 6</li>
-                                    <li>English - 5</li>
-                                    <li>Maths - 5</li>
-                                    <li>Music - 5</li>
+                                <h4>GCSE Grades Achieved</h4>
+                                <ul class="dashed d-inline-block">
+                                    <li>Computer Science  <span class="primary-colour">6</span></li>
+                                    <li>English  <span class="primary-colour">5</span></li>
+                                </ul>
+                                <ul class="dashed d-inline-block align-top">
+                                    <li>Maths  <span class="primary-colour">5</span></li>
+                                    <li>Music  <span class="primary-colour">4</span></li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="education-college-content" role="tabpanel" aria-labelledby="education-college-tab" tabindex=0>
-                                <h3 class="fw-bold">2019 - 2022</h3>
+                                <h3 class="fw-bold">September 2020 - July 2022</h3>
                                 <h4>College</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias, delectus vel saepe dolore sequi dolor esse fugit doloribus tenetur perspiciatis voluptatem. Odio id veritatis voluptatibus velit ut repellat dolores?
+                                    Derby College taught me everything I needed to know about the business aspect of the industry,
+                                    including proper conduct and standards. On top of this, I was further able to expand my skillset
+                                    by learning new languages such as HTML, CSS, JavaScript and CSharp. Here I was also able to
+                                    utilise my Python knowledge to aid in my course.
                                 </p>
-                                <h4>Education Outcome</h4>
+                                <h4>T-Level Qualification Grade</h4>
                                 <ul class="dashed">
-                                    <li>T-Level qualification - Passed</li>
+                                    <li><span class="primary-colour">Passed</span></li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="education-apprentice-content" role="tabpanel" aria-labelledby="education-apprentice-tab" tabindex=0>
-                                <h3 class="fw-bold">2022 - 2023</h3>
+                                <h3 class="fw-bold">September 2022 - February 2023</h3>
                                 <h4>Apprenticeship</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil vero dolores eveniet totam voluptatum rerum ratione magni? Magnam quos magni illo soluta reprehenderit sed consequatur doloremque facilis? Laboriosam, dolor!
+                                    This apprenticeship gave me first hand experience of working in the industry as I was
+                                    working with a web development company <a class="underline-hover primary-colour" href="https://derventioeducation.com" target="_blank">Derventio Education Limited</a>.
+
                                 </p>
-                                <h4>Education Outcome</h4>
+                                <h4>Certificates Achieved</h4>
+                                <ul class="dashed d-inline-block">
+                                    <li>JavaScript Certificate <span class="primary-colour">✓</span></li>
+                                    <li>Python Certificate <span class="primary-colour">✓</span></li>
+                                    <li>Software Deveolpment Certificate <span class="primary-colour">✓</span></li>
+                                </ul>
+                                <ul class="dashed d-inline-block align-top">
+                                    <li>Databases Certificate <span class="primary-colour">✓</span></li>
+                                    <li>HTML & CSS Certificate <span class="primary-colour">✓</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-100 text-colour my-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 position-relative">
+                    <div id="work" class="position-absolute" style="top: -5rem;"></div>
+                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Work</h2>
+                    <div class="d-flex align-items-start">
+                        <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="work-tablist" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="work-tesco-tab" data-bs-toggle="pill" data-bs-target="#work-tesco-content" type="button" role="tab" aria-controls="work-school-content" aria-selected="true">Tesco PLC</button>
+                            <button class="nav-link" id="work-college-tab" data-bs-toggle="pill" data-bs-target="#work-college-content" type="button" role="tab" aria-controls="work-college-content" aria-selected="false">Derventio Education Limited</button>
+                        </div>
+                        <div class="tab-content muted-text fs-5" id="work-tabcontent" style="font-family: calibri; min-height: 400px;">
+                            <div class="tab-pane fade show active" id="work-tesco-content" role="tabpanel" aria-labelledby="work-tesco-tab" tabindex=0>
+                                <h3 class="fw-bold">December 2021 - March 2023</h3>
+                                <h4>Stock Control</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptas earum quibusdam unde, iusto adipisci voluptate tempore cumque culpa ea a consectetur debitis necessitatibus sequi consequatur possimus reprehenderit. Vel, unde.
+                                </p>
+                                <h4>Skills Enhanced</h4>
                                 <ul class="dashed">
-                                    <li>JavaScript Certificate - Passed</li>
-                                    <li>Python Certificate - Passed</li>
-                                    <li>Software Deveolpment Certificate - Passed</li>
-                                    <li>Databases Certificate - Passed</li>
-                                    <li>HTML & CSS Certificate - Passed</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="work-college-content" role="tabpanel" aria-labelledby="work-college-tab" tabindex=0>
+                                <h3 class="fw-bold">February 2023 - Present</h3>
+                                <h4>Junior Software Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis modi magni architecto dolorum aspernatur! Omnis reprehenderit ipsum tenetur architecto fuga est possimus, tempore, dolor et magnam id, distinctio in.
+                                </p>
+                                <h4>Skills Enhanced</h4>
+                                <ul class="dashed">
                                 </ul>
                             </div>
                         </div>
