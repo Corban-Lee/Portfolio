@@ -6,24 +6,24 @@ Corban-Lee Jones | Software Developer
 {% endblock %}
 
 {% block content %}
-<nav class="navbar navbar-expand-xl fixed-top frosted-glass">
-    <div class="container-fluid px-5 py-3">
-        <a href="/" class="position-relative">
+<nav class="navbar navbar-expand-xl fixed-top py-1 frosted-glass">
+    <div class="container-fluid px-5 navbar-padding">
+        <!-- <a href="/" class="position-relative">
             <i class="bi bi-plugin fs-1 primary-colour position-absolute top-50 translate-middle-y"></i>
-        </a>
+        </a> -->
         <button class="navbar-toggler btn-outline-primary-colour" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list" style="font-size: 30px;"></i>
         </button>
         <div class="collapse navbar-collapse mb-2 mb-xl-0" id="navbarCollapse">
-            <ul class="navbar-nav ms-0 ms-lg-auto">
+            <ul class="navbar-nav ms-0 ms-lg-auto fs-6">
                 <li class="nav-item px-2">
                     <a class="nav-link my-auto" href="#about">
                         <span class="primary-colour">01.</span> About
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#experience">
-                        <span class="primary-colour">02.</span> Experience
+                    <a class="nav-link" href="#work">
+                        <span class="primary-colour">02.</span> Work
                     </a>
                 </li>
                 <li class="nav-item px-2">
@@ -32,8 +32,8 @@ Corban-Lee Jones | Software Developer
                     </a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#work">
-                        <span class="primary-colour">04.</span> Work
+                    <a class="nav-link" href="#projects">
+                        <span class="primary-colour">04.</span> Projects
                     </a>
                 </li>
                 <li class="nav-item px-2">
@@ -53,22 +53,22 @@ Corban-Lee Jones | Software Developer
 <div id="content">
     <main class="mb-5 pb-5">
         <section class="vh-100 w-100 text-center text-sm-start d-flex flex-wrap flex-column justify-content-center align-items-center text-colour full-height">
-            <div class="w-100 primary-colour fs-5">Hello world! My name is</div>
+            <div class="w-100 primary-colour fs-5 mb-2">Hello world! My name is</div>
             <div class="w-100">
-                <h1 class="mb-0 off-white-colour" style="font-size: clamp(40px, 8vw, 80px); font-family: calibri;">
+                <h1 class="mb-0 off-white-colour poppins-semibold" style="font-size: clamp(40px, 8vw, 70px);">
                     Corban-Lee Jones.
                 </h1>
             </div>
             <div class="w-100">
-                <h2 style="font-size: clamp(40px, 8vw, 80px); font-family: calibri;">
-                    I Create Software Solutions.
+                <h2 class="poppins-semibold muted-text" style="font-size: clamp(40px, 8vw, 70px);">
+                    I create software solutions.
                 </h2>
             </div>
             <div class="w-100">
                 <div class="col-md-7 col-xl-6">
-                    <p class="fs-5 muted-text" style="font-family: calibri;">
-                            I am a Junior Software Developer currently working in full stack web development in Derbyshire.
-                            My passion is creating clean and maintainable software, which you can find on my <a class="underline-hover primary-colour" href="https://github.com/XordK">Github Page</a>.
+                    <p class="fs-5 muted-text poppins-light">
+                        I am a Junior Software Developer currently working in full stack web development in Derbyshire.
+                        My passion is creating clean and maintainable software, most of which you can find on my <a class="underline-hover primary-colour" href="https://github.com/XordK">Github Page</a>.
                     </p>
                 </div>
             </div>
@@ -78,9 +78,9 @@ Corban-Lee Jones | Software Developer
         </section>
         <section class="w-100 mb-5 pb-5 d-flex flex-wrap flex-column justify-content-center align-items-center text-colour position-relative">
             <div id="about" class="position-absolute" style="top: -10rem;"></div>
-            <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">About Me</h2>
+            <h2 class="numbered-heading poppins-bold">About Me</h2>
             <div class="row gx-5">
-                <div class="col-sm-7 muted-text fs-5" style="font-family: calibri;">
+                <div class="col-sm-7 muted-text fs-5 poppins-light">
                     <p>
                         Hi, I'm <b>Corban-Lee Jones</b>, a 19-year-old with <a class="primary-colour underline-hover" href="https://www.autism.org.uk/advice-and-guidance/what-is-autism/asperger-syndrome">Asperger's Syndrome</a>.
                     </p>
@@ -88,124 +88,73 @@ Corban-Lee Jones | Software Developer
                         I love to create software solutions for myself and others.
                         Learning to code was an experience I found in secondary school,
                         where I learned the brilliance of watching systems you create come together.
-                        Since then I have grown to learn many new and exiting techniques and programming
-                        languages to boost my career and love of software development.
+                        Since then I have grown to learn many new and exiting techniques and technologies
+                        to boost my career and love of software development.
                     </p>
                     <p>
                         Recently, I participated in an apprenticeship program that later evolved into a
-                        full-time job as a Junior Software Developer, and I am proud to say that this opportunity
+                        full-time job as a <b>Junior Software Developer</b>, and I am proud to say that this opportunity
                         marks my official entry into the industry.
                     </p>
                     <p>
                         Finally, some of my prodominant skills aquired through my efforts include:
                     </p>
-                    <ul class="d-inline-block dashed">
+                    <ul class="d-inline-block dashed monospace">
                         <li>Python (Inc. Django)</li>
                         <li>HTML</li>
                         <li>CSS</li>
                     </ul>
-                    <ul class="d-inline-block dashed">
+                    <ul class="d-inline-block dashed monospace">
                         <li>JavaScript</li>
                         <li>SQL</li>
                         <li>CSharp (MVC)</li>
                     </ul>
                 </div>
                 <div class="col-sm-5 position-relative">
-                    <div class="position-relative">
-                        <img class="mt-4 mt-sm-0 w-100 rounded-3 img-fluid position-absolute" src="{% static 'img/corbz.jpg' %}" alt="Corban-Lee Jones">
-                    </div>
+                    <img class="mt-4 mt-sm-0 w-100 rounded-3 img-fluid  " src="{% static 'img/corbz.jpg' %}" alt="Corban-Lee Jones">
                 </div>
             </div>
         </section>
         <section class="w-100 text-colour my-5 py-5">
-            <div class="row justify-content-center">
-                <div class="col-12 position-relative">
-                    <div id="experience" class="position-absolute" style="top: -5rem;"></div>
-                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Experience</h2>
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-12 position-relative pt-5">
+                    <div id="work" class="position-absolute" style="top: -5rem;"></div>
+                    <h2 class="numbered-heading poppins-bold">Work</h2>
                     <div class="d-flex align-items-start">
-                        <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="experience-tablist" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="experience-school-tab" data-bs-toggle="pill" data-bs-target="#experience-school-content" type="button" role="tab" aria-controls="experience-school-content" aria-selected="true">Secondary School</button>
-                            <button class="nav-link" id="experience-college-tab" data-bs-toggle="pill" data-bs-target="#experience-college-content" type="button" role="tab" aria-controls="experience-college-content" aria-selected="false">College</button>
-                            <button class="nav-link" id="experience-apprentice-tab" data-bs-toggle="pill" data-bs-target="#experience-apprentice-content" type="button" role="tab" aria-controls="experience-apprentice-content" aria-selected="false">Apprenticeship</button>
-                            <button class="nav-link" id="experience-personal-tab" data-bs-toggle="pill" data-bs-target="#experience-personal-content" type="button" role="tab" aria-controls="experience-personal-content" aria-selected="false">Personal</button>
+                        <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="work-tablist" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="work-tesco-tab" data-bs-toggle="pill" data-bs-target="#work-tesco-content" type="button" role="tab" aria-controls="work-school-content" aria-selected="true">Tesco PLC</button>
+                            <button class="nav-link" id="work-apprentice-tab" data-bs-toggle="pill" data-bs-target="#work-apprentice-content" type="button" role="tab" aria-controls="work-college-content" aria-selected="false">Derventio Education Ltd #1</button>
+                            <button class="nav-link" id="work-derventio-tab" data-bs-toggle="pill" data-bs-target="#work-derventio-content" type="button" role="tab" aria-controls="work-college-content" aria-selected="false">Derventio Education Ltd #2</button>
                         </div>
-                        <div class="tab-content muted-text fs-5" id="experience-tabcontent" style="font-family: calibri; min-height: 400px;">
-                            <div class="tab-pane fade show active" id="experience-school-content" role="tabpanel" aria-labelledby="experience-school-tab" tabindex=0>
+                        <div class="tab-content muted-text fs-5 poppins-light" id="work-tabcontent" style="min-height: 400px;">
+                            <div class="tab-pane fade show active" id="work-tesco-content" role="tabpanel" aria-labelledby="work-tesco-tab" tabindex=0>
+                                <h3 class="fw-bold">11th December 2021 - 2nd April 2023</h3>
+                                <h4>Stock Control</h4>
                                 <p>
-                                    I discovered my passion for programming in secondary school,
-                                    where I was lucky enough to have enthusiastic teachers who guided me in my learning.
-                                    With their help, I was able to get a head start on my programming journey, which has
-                                    continued to be a central focus in my life ever since.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptas earum quibusdam unde, iusto adipisci voluptate tempore cumque culpa ea a consectetur debitis necessitatibus sequi consequatur possimus reprehenderit. Vel, unde.
                                 </p>
-                                <h4>Enhanced Skills</h4>
+                                <h4>Skills Enhanced</h4>
                                 <ul class="dashed">
-                                    <li>Python</li>
-                                    <li>Programming Theory</li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="experience-college-content" role="tabpanel" aria-labelledby="experience-college-tab" tabindex=0>
+                            <div class="tab-pane fade" id="work-apprentice-content" role="tabpanel" aria-labelledby="work-college-tab" tabindex=0>
+                                <h3 class="fw-bold">September 2022 - 14th Feburary 2023</h3>
+                                <h4>Apprentice Software Developer</h4>
                                 <p>
-                                    During my college years, I continued to hone my programming skills by
-                                    learning new languages and technologies. I was always eager to expand my knowledge
-                                    and explore new programming concepts. Additionally, I gained practical experience
-                                    by working with Rolls Royce, where I developed a web scraper to automate data collection.
-                                    This experience not only strengthened my programming abilities but also taught me the
-                                    importance of delivering high-quality work in a professional setting.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis modi magni architecto dolorum aspernatur! Omnis reprehenderit ipsum tenetur architecto fuga est possimus, tempore, dolor et magnam id, distinctio in.
                                 </p>
-                                <h4>Enhanced Skills</h4>
-                                <ul class="dashed d-inline-block">
-                                    <li>Python</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <ul class="dashed d-inline-block">
-                                    <li>JavaScript</li>
-                                    <li>CSharp</li>
-                                    <li>SQL</li>
+                                <h4>Skills Enhanced</h4>
+                                <ul class="dashed">
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="experience-apprentice-content" role="tabpanel" aria-labelledby="experience-apprentice-tab" tabindex=0>
+                            <div class="tab-pane fade" id="work-derventio-content" role="tabpanel" aria-labelledby="work-college-tab" tabindex=0>
+                                <h3 class="fw-bold">14th February 2023 - Present</h3>
+                                <h4>Junior Software Developer</h4>
                                 <p>
-                                    I took a course in software development, which covered a range of programming
-                                    languages and concepts. As part of the course, I studied C# programming, a language that
-                                    was relatively new to me at the time. Despite this, I was able to learn the language quickly
-                                    and apply it effectively in a professional work environment. Through this experience, I
-                                    gained valuable skills in software development, problem-solving, teamwork, and communication.
-                                    Additionally, I received several certificates for the various exams I took with the course,
-                                    which demonstrated my mastery of the concepts and my commitment to continuous learning and development.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis modi magni architecto dolorum aspernatur! Omnis reprehenderit ipsum tenetur architecto fuga est possimus, tempore, dolor et magnam id, distinctio in.
                                 </p>
-                                <h4>Enhanced Skills</h4>
-                                <ul class="dashed d-inline-block">
-                                    <li>Python</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <ul class="dashed d-inline-block">
-                                    <li>JavaScript</li>
-                                    <li>CSharp</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="experience-personal-content" role="tabpanel" aria-labelledby="experience-personal-tab" tabindex=0>
-                                <p>
-                                    In my personal time, I enjoy working on side projects and hobbies that allow me to continue
-                                    developing my programming skills. These projects range from small apps and websites to larger,
-                                    more complex programs that challenge me to colourlearn new concepts and technologies. I find the
-                                    process of building and refining these projects both entertaining and rewarding, as it allows
-                                    me to explore new ideas and experiment with different approaches to programming. Additionally,
-                                    these projects help me to stay up-to-date with the latest industry trends and maintain my passion
-                                    for programming outside of a professional work environment.
-                                </p>
-                                <h4>Enhanced Skills</h4>
-                                <ul class="dashed d-inline-block">
-                                    <li>Python</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <ul class="dashed d-inline-block">
-                                    <li>JavaScript</li>
-                                    <li>CSharp</li>
-                                    <li>SQL</li>
+                                <h4>Skills Enhanced</h4>
+                                <ul class="dashed">
                                 </ul>
                             </div>
                         </div>
@@ -217,16 +166,16 @@ Corban-Lee Jones | Software Developer
             <div class="row justify-content-center">
                 <div class="col-12 position-relative">
                     <div id="education" class="position-absolute" style="top: -5rem;"></div>
-                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Education</h2>
+                    <h2 class="numbered-heading poppins-bold">Education</h2>
                     <div class="d-flex align-items-start">
                         <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="education-tablist" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="education-school-tab" data-bs-toggle="pill" data-bs-target="#education-school-content" type="button" role="tab" aria-controls="education-school-content" aria-selected="true">Kirkhallam Community Academy</button>
                             <button class="nav-link" id="education-college-tab" data-bs-toggle="pill" data-bs-target="#education-college-content" type="button" role="tab" aria-controls="education-college-content" aria-selected="false">Derby College</button>
                             <button class="nav-link" id="education-apprentice-tab" data-bs-toggle="pill" data-bs-target="#education-apprentice-content" type="button" role="tab" aria-controls="education-apprentice-content" aria-selected="false">EMA Training</button>
                         </div>
-                        <div class="tab-content muted-text fs-5" id="education-tabcontent" style="font-family: calibri; min-height: 400px;">
+                        <div class="tab-content muted-text fs-5 poppins-light" id="education-tabcontent" style="min-height: 400px;">
                             <div class="tab-pane fade show active" id="education-school-content" role="tabpanel" aria-labelledby="education-school-tab" tabindex=0>
-                                <h3 class="fw-bold">2014 - March 2020</h3>
+                                <h3 class="fw-bold">2014 - 20th March 2020</h3>
                                 <h4>Secondary School</h4>
                                 <p>
                                     School was a confusing time where I had to find my identity and career path.
@@ -247,10 +196,12 @@ Corban-Lee Jones | Software Developer
                                 <h3 class="fw-bold">September 2020 - July 2022</h3>
                                 <h4>College</h4>
                                 <p>
-                                    Derby College taught me everything I needed to know about the business aspect of the industry,
-                                    including proper conduct and standards. On top of this, I was further able to expand my skillset
-                                    by learning new languages such as HTML, CSS, JavaScript and CSharp. Here I was also able to
-                                    utilise my Python knowledge to aid in my course.
+                                    During my college years, I continued to hone my programming skills by
+                                    learning new languages and technologies. I was always eager to expand my knowledge
+                                    and explore new programming concepts. Additionally, I gained practical experience
+                                    by working with Rolls Royce, where I developed a web scraper to automate data collection.
+                                    This experience not only strengthened my programming abilities but also taught me the
+                                    importance of delivering high-quality work in a professional setting.
                                 </p>
                                 <h4>T-Level Qualification Grade</h4>
                                 <ul class="dashed">
@@ -266,7 +217,7 @@ Corban-Lee Jones | Software Developer
 
                                 </p>
                                 <h4>Certificates Achieved</h4>
-                                <ul class="dashed d-inline-block">
+                                <ul class="dashed d-inline-block mb-0">
                                     <li>JavaScript Certificate <span class="primary-colour">✓</span></li>
                                     <li>Python Certificate <span class="primary-colour">✓</span></li>
                                     <li>Software Deveolpment Certificate <span class="primary-colour">✓</span></li>
@@ -284,32 +235,94 @@ Corban-Lee Jones | Software Developer
         <section class="w-100 text-colour my-5 py-5">
             <div class="row justify-content-center">
                 <div class="col-12 position-relative">
-                    <div id="work" class="position-absolute" style="top: -5rem;"></div>
-                    <h2 class="numbered-heading" style="font-family: calibri; font-weight: 600;">Work</h2>
+                    <div id="projects" class="position-absolute" style="top: -5rem;"></div>
+                    <h2 class="numbered-heading poppins-bold">Projects</h2>
                     <div class="d-flex align-items-start">
-                        <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="work-tablist" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="work-tesco-tab" data-bs-toggle="pill" data-bs-target="#work-tesco-content" type="button" role="tab" aria-controls="work-school-content" aria-selected="true">Tesco PLC</button>
-                            <button class="nav-link" id="work-college-tab" data-bs-toggle="pill" data-bs-target="#work-college-content" type="button" role="tab" aria-controls="work-college-content" aria-selected="false">Derventio Education Limited</button>
+                        <div class="nav fs-6 flex-column nav-pills me-4" style="min-width: 280px;" id="projects-tablist" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="projects-bot-tab" data-bs-toggle="pill" data-bs-target="#projects-bot-content" type="button" role="tab" aria-controls="projects-bot-content" aria-selected="true">Discord Bot Application</button>
+                            <button class="nav-link" id="projects-website-tab" data-bs-toggle="pill" data-bs-target="#projects-website-content" type="button" role="tab" aria-controls="projects-website-content" aria-selected="false">Portfolio Website</button>
+                            <button class="nav-link" id="projects-spacy-tab" data-bs-toggle="pill" data-bs-target="#projects-spacy-content" type="button" role="tab" aria-controls="projects-spacy-content" aria-selected="false">Rolls Royce - Spacy Research</button>
                         </div>
-                        <div class="tab-content muted-text fs-5" id="work-tabcontent" style="font-family: calibri; min-height: 400px;">
-                            <div class="tab-pane fade show active" id="work-tesco-content" role="tabpanel" aria-labelledby="work-tesco-tab" tabindex=0>
-                                <h3 class="fw-bold">December 2021 - March 2023</h3>
-                                <h4>Stock Control</h4>
+                        <div class="tab-content muted-text fs-5 poppins-light" id="projects-tabcontent" style="min-height: 400px;">
+                            <div class="tab-pane fade show active" id="projects-bot-content" role="tabpanel" aria-labelledby="projects-bot-tab" tabindex=0>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptas earum quibusdam unde, iusto adipisci voluptate tempore cumque culpa ea a consectetur debitis necessitatibus sequi consequatur possimus reprehenderit. Vel, unde.
+                                    All in one discord bot
                                 </p>
-                                <h4>Skills Enhanced</h4>
-                                <ul class="dashed">
+                                <h4>Developed Skills</h4>
+                                <ul class="dashed monospace">
+                                    <li>Python Programming Language</li>
+                                    <li>Discord API</li>
+                                    <li>DiscordPy (Python Library)</li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="work-college-content" role="tabpanel" aria-labelledby="work-college-tab" tabindex=0>
-                                <h3 class="fw-bold">February 2023 - Present</h3>
-                                <h4>Junior Software Developer</h4>
+                            <div class="tab-pane fade" id="projects-website-content" role="tabpanel" aria-labelledby="projects-website-tab" tabindex=0>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis modi magni architecto dolorum aspernatur! Omnis reprehenderit ipsum tenetur architecto fuga est possimus, tempore, dolor et magnam id, distinctio in.
+                                    This very website
                                 </p>
-                                <h4>Skills Enhanced</h4>
-                                <ul class="dashed">
+                                <h4>Enhanced Skills</h4>
+                                <ul class="dashed d-inline-block monospace">
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block monospace align-top">
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="projects-spacy-content" role="tabpanel" aria-labelledby="projects-spacy-tab" tabindex=0>
+                                <p>
+                                    Rolls Royce Spacy project
+                                </p>
+                                <h4>Enhanced Skills</h4>
+                                <ul class="dashed monospace">
+                                    <li>Python</li>
+                                    <li>TKinter (Python GUI Library)</li>
+                                    <li>Web Scraping</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="projects-apprentice-content" role="tabpanel" aria-labelledby="projects-apprentice-tab" tabindex=0>
+                                <p>
+                                    I took a course in software development, which covered a range of programming
+                                    languages and concepts. As part of the course, I studied C# programming, a language that
+                                    was relatively new to me at the time. Despite this, I was able to learn the language quickly
+                                    and apply it effectively in a professional work environment. Through this experience, I
+                                    gained valuable skills in software development, problem-solving, teamwork, and communication.
+                                    Additionally, I received several certificates for the various exams I took with the course,
+                                    which demonstrated my mastery of the concepts and my commitment to continuous learning and development.
+                                </p>
+                                <h4>Enhanced Skills</h4>
+                                <ul class="dashed d-inline-block monospace">
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block monospace">
+                                    <li>JavaScript</li>
+                                    <li>CSharp</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="projects-personal-content" role="tabpanel" aria-labelledby="projects-personal-tab" tabindex=0>
+                                <p>
+                                    In my personal time, I enjoy working on side projects and hobbies that allow me to continue
+                                    developing my programming skills. These projects range from small apps and websites to larger,
+                                    more complex programs that challenge me to colourlearn new concepts and technologies. I find the
+                                    process of building and refining these projects both entertaining and rewarding, as it allows
+                                    me to explore new ideas and experiment with different approaches to programming. Additionally,
+                                    these projects help me to stay up-to-date with the latest industry trends and maintain my passion
+                                    for programming outside of a professional work environment.
+                                </p>
+                                <h4>Enhanced Skills</h4>
+                                <ul class="dashed d-inline-block monospace">
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <ul class="dashed d-inline-block monospace">
+                                    <li>JavaScript</li>
+                                    <li>CSharp</li>
+                                    <li>SQL</li>
                                 </ul>
                             </div>
                         </div>

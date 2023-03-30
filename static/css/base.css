@@ -1,5 +1,5 @@
 :root {
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-mono: "Ubuntu Mono", monospace;
 
     --primary-color: #65ffdb;
     --secondary-color: #689f38;
@@ -12,6 +12,39 @@
     --background-color-opacity-10: rgba(33, 33, 33, 0.1);
 }
 
+.navbar-padding {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-padding-lg {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.monospace {
+    font-family: var(--font-mono)!important;
+}
+
+.poppins-thin {
+    font-family: 'Poppins Thin'!important;
+}
+
+.poppins-light {
+    font-family: 'Poppins Light'!important;
+}
+
+.poppins {
+    font-family: 'Poppins'!important;
+}
+
+.poppins-semibold {
+    font-family: 'Poppins SemiBold'!important;
+}
+
+.poppins-bold {
+    font-family: 'Poppins Bold'!important;
+}
 
 body {
     background-color: var(--background-color)!important;
